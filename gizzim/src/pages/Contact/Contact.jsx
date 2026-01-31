@@ -154,6 +154,7 @@ const ContactPage = () => {
 
                 <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
                     <div className="inline-block mb-6 px-6 py-2 bg-amber-600/20 border border-amber-600/50 rounded-full">
+                        
                         <span className="text-amber-600 font-semibold text-sm tracking-widest uppercase">Get In Touch</span>
                     </div>
                     <h2 className="text-6xl md:text-7xl font-serif font-black text-stone-100 mb-6 tracking-tight leading-none">

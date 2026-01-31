@@ -45,7 +45,8 @@ const Homepage = () => {
       icon: <Users className="w-8 h-8" />,
       title: "Mentorship Opportunities",
       description: "Connect with industry professionals who guide your artistic growth through personalized one-on-one mentorship.",
-      image: "https://scontent.fnbo12-1.fna.fbcdn.net/v/t39.30808-6/590085018_1299863485505937_364836644614264491_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGly278oBUCQR6JLwN0hCp0krE2_OxyNlaSsTb87HI2VuUxD2BJAHC0B8acNDLFpbCLQI1U9ExOQ-8VUeXt5fJ4&_nc_ohc=0LpDvuEdJZcQ7kNvwHHm61-&_nc_oc=Adlt2oz2XpX-XGJgF-wLRCCXK7MnTOen9j6Df01cQbqVnc32qhiHtLPwsdgPLRfyNmg&_nc_zt=23&_nc_ht=scontent.fnbo12-1.fna&_nc_gid=DgIv6Gs-3UteDdhPKDukPQ&oh=00_AfuTUHXTOQX1VYnxQHVHlzdRa7KiInUrzu9Qmj69i804xw&oe=69839F51",
+      image: "https://scontent.fnbo12-1.fna.fbcdn.net/v/t39.30808-6/590085018_1299863485505937_364836644614264491_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGly278oBUCQR6JLwN0hCp0krE2_OxyNlaSsTb87HI2VuUxD2BJAHC0B8acNDLFpbCLQI1U9ExOQ-8VUeXt5fJ4&_nc_ohc=0LpDvuEdJZcQ7kNvwHHm61-&_nc_oc=Adlt2oz2XpX-XGJgF-wLRCCXK7MnTOen9j6Df01cQbqVnc32qhiHtLPwsdgPLRfyNmg&_nc_zt=23&_nc_ht=scontent.fnbo12-1.fna&_nc_gid=DgIv6Gs-3UteDdhPKDukPQ&oh=00_AfuTUHXTOQX1VYnxQHVHlzdRa7KiInUrzu9Qmj69i804xw&oe=69839F51", 
+      
     },
     {
       icon: <Lightbulb className="w-8 h-8" />,

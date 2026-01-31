@@ -11,7 +11,7 @@ const ProgramsPage = () => {
     {
       id: 1,
       category: 'short-term',
-      icon: <Camera className="w-12 h-12" />,
+      icon: <Camera className="w-2 h-2" />,
       title: "Short-Term Photography Training & Pilot Camps",
       tagline: "Jumpstart Your Creative Journey",
       duration: "1-2 Weeks",
@@ -25,14 +25,14 @@ const ProgramsPage = () => {
         "Equipment familiarization workshops",
         "Networking with fellow photography enthusiasts"
       ],
-      image: "https://images.unsplash.com/photo-1606857521015-7f9fcf423740?w=1200&q=80",
+      image: "https://scontent.fnbo12-1.fna.fbcdn.net/v/t39.30808-6/590085018_1299863485505937_364836644614264491_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGly278oBUCQR6JLwN0hCp0krE2_OxyNlaSsTb87HI2VuUxD2BJAHC0B8acNDLFpbCLQI1U9ExOQ-8VUeXt5fJ4&_nc_ohc=0LpDvuEdJZcQ7kNvwHHm61-&_nc_oc=Adlt2oz2XpX-XGJgF-wLRCCXK7MnTOen9j6Df01cQbqVnc32qhiHtLPwsdgPLRfyNmg&_nc_zt=23&_nc_ht=scontent.fnbo12-1.fna&_nc_gid=nygrSZGTv5bN32AIbQ5LyQ&oh=00_Afve2kR8IXUBNs7X-uJykD1hpn825VwyCxEsPSlVaLOnDQ&oe=69839F51",
       price: "From $499",
       nextDate: "March 15, 2026"
     },
     {
       id: 2,
       category: 'intensive',
-      icon: <Award className="w-12 h-12" />,
+      icon: <Award className="w-2 h-2" />,
       title: "Intensive Photography Training Programs",
       tagline: "Master Advanced Techniques",
       duration: "8-12 Weeks",
@@ -47,14 +47,14 @@ const ProgramsPage = () => {
         "Specialized genre training (portrait, landscape, commercial, etc.)",
         "Certificate of completion"
       ],
-      image: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=1200&q=80",
+      image: "https://scontent.fnbo12-1.fna.fbcdn.net/v/t39.30808-6/549824270_1235314171960869_6288218468892180198_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeFrh02x323-R8nqlBU0FWQkWxCn4rCxQjJbEKfisLFCMlTbJ0qWFw9BpKWEkX6tcggAnXJGNkhfUx6nbPnpYLBM&_nc_ohc=Y3UkUH04RPQQ7kNvwEhCGel&_nc_oc=AdnZNzexhOyuJV1_svEqJzMJBw7i7VwHK3ks4sPsxsAHkyt8qgv8U0S8DFcvZKsEiDE&_nc_zt=23&_nc_ht=scontent.fnbo12-1.fna&_nc_gid=fLNvcgXEqV6n0heS2vr73g&oh=00_Aftm1FdQHePzVlDCUVNtGCBtVhr1vZfJyYbF42yhtBX6tQ&oe=6983AE02",
       price: "From $2,499",
       nextDate: "April 1, 2026"
     },
     {
       id: 3,
       category: 'online',
-      icon: <BookOpen className="w-12 h-12" />,
+      icon: <BookOpen className="w-2 h-2" />,
       title: "Online Courses & Webinars",
       tagline: "Learn at Your Own Pace",
       duration: "Self-Paced / Live Sessions",
@@ -69,14 +69,14 @@ const ProgramsPage = () => {
         "Private student community forum",
         "Lifetime access to course materials"
       ],
-      image: "https://images.unsplash.com/photo-1432821596592-e2c18b78144f?w=1200&q=80",
+      image: "https://scontent.fnbo12-1.fna.fbcdn.net/v/t39.30808-6/485809754_1086497040175917_1134285044860700956_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGzrRxdrwRYgSUoJv5g6maZ8yMgLoKb1Y7zIyAugpvVjmk2QCXCvLD2XVWsOrxVwbpS_4CFR0tEBsnVQZ0RIS5o&_nc_ohc=vrVpE8YYLCMQ7kNvwEkOxgD&_nc_oc=AdmnT2LdNVQ5GkJCE1Bj6C0OZ92iYc1IC56YUTX6fiRJ7BTCHjd-iGxbTNHEIcG-Nx0&_nc_zt=23&_nc_ht=scontent.fnbo12-1.fna&_nc_gid=OOMIHClgWawLhl3aCovApQ&oh=00_AfsTZgkpU6ODBeBxy7b3wlqbXEPvK3SaYqOkqsR-On9OfA&oe=6983C626",
       price: "From $99/course",
       nextDate: "Rolling Enrollment"
     },
     {
       id: 4,
       category: 'mentorship',
-      icon: <Users className="w-12 h-12" />,
+      icon: <Users className="w-3 h-3" />,
       title: "Mentorship Opportunities",
       tagline: "Personalized Guidance from Pros",
       duration: "3-6 Months",
@@ -91,14 +91,14 @@ const ProgramsPage = () => {
         "Access to mentor's professional network",
         "Goal-oriented development roadmap"
       ],
-      image: "https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=1200&q=80",
+      image: "https://scontent.fnbo12-1.fna.fbcdn.net/v/t39.30808-6/548092950_1233332215492398_1591155410604794301_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGZ7xvNbg7B7G7Bjm1rR1y2yo2dOhvkGJTKjZ06G-QYlP0DWJXsMKbGRXL4euAwIzI8Q0SngPNh_zIffaNqxqIs&_nc_ohc=zqw185wf-gQQ7kNvwGYFcF1&_nc_oc=AdlynPxYvyecRztbNEVpD4uBGyK6g3tvwqLm2L3ZFJ031Q_WeyPXVhdOPOOpfb3oSy8&_nc_zt=23&_nc_ht=scontent.fnbo12-1.fna&_nc_gid=__6D8G0x2DuIgcv_nVsOiA&oh=00_AfvrqsBWQpGX16Q1GNue0AkYKPM-Ecu5f5JeWf69-kQ2jA&oe=6983995F",
       price: "From $1,299",
       nextDate: "February 10, 2026"
     },
     {
       id: 5,
       category: 'competitive',
-      icon: <Lightbulb className="w-12 h-12" />,
+      icon: <Lightbulb className="w-2 h-2" />,
       title: "Photography Practical Competitive Trials",
       tagline: "Test Your Skills in Real-World Scenarios",
       duration: "1 Day - 1 Week",
@@ -113,14 +113,14 @@ const ProgramsPage = () => {
         "Real-time problem-solving scenarios",
         "Collaborative and solo challenges"
       ],
-      image: "https://images.unsplash.com/photo-1542038784456-1ea8e935640e?w=1200&q=80",
+      image: "https://scontent.fnbo12-1.fna.fbcdn.net/v/t39.30808-6/614902122_1330101422482143_3853933236456920998_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGARdH_W2jhdDmce6grOjW0WGguxqPQcNBYaC7Go9Bw0KKkc5wQUP4U1aypsOnJsOEbm7R0nsGbs-2rqhFkyvdH&_nc_ohc=vv9es_nRlq4Q7kNvwFGBog5&_nc_oc=AdnJo_OiBK8bR0XbOcrfzy_P6qGLn3RW5cjM2zceixPSu6QyRX0ZuCLc_fi3YDsLmDQ&_nc_zt=23&_nc_ht=scontent.fnbo12-1.fna&_nc_gid=mP2TX474BT1sxTrqN3GAZg&oh=00_AfsN5fG3Iw9DV4o7-G4-Ly48kaI1w9zxtTx3xv3ae_lndw&oe=6983C03D",
       price: "From $149/event",
       nextDate: "March 22, 2026"
     },
     {
       id: 6,
       category: 'exhibitions',
-      icon: <Image className="w-12 h-12" />,
+      icon: <Image className="w-2 h-2" />,
       title: "Exhibitions, Festivals & Conferences",
       tagline: "Showcase Your Work to the World",
       duration: "Year-Round Events",
@@ -135,7 +135,7 @@ const ProgramsPage = () => {
         "Networking events with curators and buyers",
         "Online portfolio showcases"
       ],
-      image: "https://images.unsplash.com/photo-1578926078640-e3a3f7c0f9e6?w=1200&q=80",
+      image: "https://scontent.fnbo12-1.fna.fbcdn.net/v/t39.30808-6/485294944_1083694233789531_9087067170709571553_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGTDjvAvd7DpL8jNh2xV7yeykqmrMqa347KSqasyprfjpjxP_0pr6lxKedhQSgw4TiuIW4u4DWY0L69MgxQmW0V&_nc_ohc=XjFNrYG95XQQ7kNvwHZfo58&_nc_oc=AdnSKT0zH4NmiwVyCUDaCZiWJFIm8xnJJQvLZU-2gdpl-buBBM_xrFtoSKTuxWs6qzM&_nc_zt=23&_nc_ht=scontent.fnbo12-1.fna&_nc_gid=GFIB7sXoIASONBBYiX4crA&oh=00_AfvuA2zN-eWbY5zg9Te4fPg6aUhkaHFEbc-7-1k7arvUHQ&oe=6983B6C9",
       price: "Free - $299",
       nextDate: "Ongoing"
     }
@@ -174,7 +174,7 @@ const ProgramsPage = () => {
         <div 
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: 'url(https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=1920&q=80)',
+            backgroundImage: 'url(https://scontent.fnbo12-1.fna.fbcdn.net/v/t39.30808-6/607457813_1320565466769072_2412487042534321878_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEicx3GXIJZjj5tMK9P4qRTQYCk3jK3DY5BgKTeMrcNjqVM-pP6jW1cfT03aF7bS2uxBXTG8o9Ssuy52Bi0Z58F&_nc_ohc=DrM00H8fyYcQ7kNvwGlX0u4&_nc_oc=AdmkIjC7iyCd_qkpHljIwC0ezL002gFou-GWYVyaWeVIHtliQsNRjlaM5BlKOkn3Dz4&_nc_zt=23&_nc_ht=scontent.fnbo12-1.fna&_nc_gid=Oe_Wu5AFrCNuhioNSNX9TA&oh=00_AftNZGwBl1z_xG2-WFgYIbgAZr4s-ZuDG1S_j5cZ0AeNBQ&oe=6983AF9A)',
             backgroundSize: 'cover',
             backgroundPosition: 'center'
           }}

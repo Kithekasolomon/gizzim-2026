@@ -27,25 +27,25 @@ const Homepage = () => {
       icon: <Camera className="w-8 h-8" />,
       title: "Short-Term Training & Camps",
       description: "Intensive photography boot camps designed to jumpstart your creative journey with hands-on experience.",
-      image: "https://images.unsplash.com/photo-1606857521015-7f9fcf423740?w=800&q=80",
+      image: "https://scontent.fnbo12-1.fna.fbcdn.net/v/t39.30808-6/528596448_1197223015769985_7869286701339410936_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGhlnMh7Ns_6AL_ouKM8k9umj4u1N7w3DKaPi7U3vDcMtpV4g3MDyRYfVu_QUlaKjKDe70A2LCaS1JDbj1NMl2l&_nc_ohc=EAkAVt3b7kQQ7kNvwE4OaqP&_nc_oc=Adkg1YjG3qnWk7F_mVnS6pX0VaoHKB_JOwpx4-W1yufG9G9cLGKXnT4gYMCsleql7P0&_nc_zt=23&_nc_ht=scontent.fnbo12-1.fna&_nc_gid=Ko2KSubZKclniAgE2Q30HQ&oh=00_Afum-gTlyN7udpQGLZthv-fuesjuh0DkShtARgfH_lQUbg&oe=69839B25",
     },
     {
       icon: <Award className="w-8 h-8" />,
       title: "Intensive Training Programs",
       description: "Deep-dive into advanced techniques with comprehensive curriculum covering all aspects of professional photography.",
-      image: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?w=800&q=80",
+      image: "https://scontent.fnbo12-1.fna.fbcdn.net/v/t39.30808-6/526701759_1191922592966694_3639523580879376955_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeELkwcTkH9ZrSkaFNwgyCcjiFryG_UyDXWIWvIb9TINddLKZBajVMi96TsJ9Z0q77EOcy0ATXQqiLpj_rl7z5KC&_nc_ohc=2VievV8YUrYQ7kNvwFyqq9X&_nc_oc=AdlBfi5dISXxrBHQ1-2-hyvgXjguovlEForRdZp_uPXKkSIXI_wlRgklXlRiR-5FvKI&_nc_zt=23&_nc_ht=scontent.fnbo12-1.fna&_nc_gid=zDV4woE3iqDA5Qsg7zioSw&oh=00_AfvEbZm2u3VlGyhE7PxHlkqmQPiQGO5CvIYtrwgm0KwrNQ&oe=6983C684",
     },
     {
       icon: <BookOpen className="w-8 h-8" />,
       title: "Online Courses & Webinars",
       description: "Learn from anywhere with our expertly crafted online programs and live interactive sessions.",
-      image: "https://images.unsplash.com/photo-1432821596592-e2c18b78144f?w=800&q=80",
+      image: "https://scontent.fnbo12-1.fna.fbcdn.net/v/t39.30808-6/502553359_1142117264613894_1618762181790188761_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeH3D6EtCgOQDnISsx-10f7hsbaryAVwRp2xtqvIBXBGnSNIsIwl25YTyaEP08wgzsQznoeUp3iQM2KtUBHZM5P4&_nc_ohc=kW2t0VjjB0gQ7kNvwFydqSh&_nc_oc=Adlp4Scnl1IWhgvFqkHNODD8xcPMLyqletjsrwA4vAbRc4_QiSRLhfkke5ZQqA92yto&_nc_zt=23&_nc_ht=scontent.fnbo12-1.fna&_nc_gid=Qf-unlr4f8_pixyMqXQHmw&oh=00_Afsmv3vQbZhwBfI8O8n3NKhftR8brhFsw-8gVtxwWQDGzQ&oe=69839C63",
     },
     {
       icon: <Users className="w-8 h-8" />,
       title: "Mentorship Opportunities",
       description: "Connect with industry professionals who guide your artistic growth through personalized one-on-one mentorship.",
-      image: "https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=800&q=80",
+      image: "https://scontent.fnbo12-1.fna.fbcdn.net/v/t39.30808-6/590085018_1299863485505937_364836644614264491_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGly278oBUCQR6JLwN0hCp0krE2_OxyNlaSsTb87HI2VuUxD2BJAHC0B8acNDLFpbCLQI1U9ExOQ-8VUeXt5fJ4&_nc_ohc=0LpDvuEdJZcQ7kNvwHHm61-&_nc_oc=Adlt2oz2XpX-XGJgF-wLRCCXK7MnTOen9j6Df01cQbqVnc32qhiHtLPwsdgPLRfyNmg&_nc_zt=23&_nc_ht=scontent.fnbo12-1.fna&_nc_gid=DgIv6Gs-3UteDdhPKDukPQ&oh=00_AfuTUHXTOQX1VYnxQHVHlzdRa7KiInUrzu9Qmj69i804xw&oe=69839F51",
     },
     {
       icon: <Lightbulb className="w-8 h-8" />,
@@ -57,7 +57,7 @@ const Homepage = () => {
       icon: <ImageIcon className="w-8 h-8" />,
       title: "Exhibitions & Festivals",
       description: "Showcase your work and network at prestigious photography exhibitions, festivals, and industry conferences.",
-      image: "https://images.unsplash.com/photo-1578926078640-e3a3f7c0f9e6?w=800&q=80",
+      image: "https://scontent.fnbo12-1.fna.fbcdn.net/v/t39.30808-6/485321162_1083751350450486_3204104549662916293_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGbCxzmJdQSQF0gsReYk6Zftebo4TWSEUa15ujhNZIRRpkyebyvE7SdOhQFCM526zTosfGQLLVgHozddhbGcLZy&_nc_ohc=yFYPQ08Wej0Q7kNvwELDJGn&_nc_oc=AdlONBsjrWXqq90IShYePHW3_FdPy26yIz3QXjJ_pSS9vb2hOJ9l8_rbu4JFpvDQCCc&_nc_zt=23&_nc_ht=scontent.fnbo12-1.fna&_nc_gid=AHgjsenFhFEngorefLSlTw&oh=00_Aft6U0vUBgu-uCNdoMTsaSP4X_LP3egH4ZXbdDVdma-jsA&oe=6983BE53",
     },
   ];
 

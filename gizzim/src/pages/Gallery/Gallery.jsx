@@ -269,9 +269,9 @@ const GalleryPage = () => {
             {/* Hero Section */}
             <section className="relative pt-40 pb-32 overflow-hidden">
                 <div
-                    className="absolute inset-0"
+                    className="absolute inset-1"
                     style={{
-                        backgroundImage: 'url(https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=1920&q=80)',
+                        backgroundImage: 'url(https://scontent.fnbo12-1.fna.fbcdn.net/v/t39.30808-6/588715873_1292941236198162_3601149284976232708_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHzHBC5ZJ2C87n4aGV9ufcbSBUF-bgfJRlIFQX5uB8lGSLLIVt-RdpGurijdazGHc5gbCutUdPP4XqLZwT3eB13&_nc_ohc=PYkQBDTX9eEQ7kNvwGLNoVJ&_nc_oc=AdmnBlxNhy6TqoErtsDg16eYz0nnORwArf8lx3OdQW4bU3T6YZlRrgBgyPJtA4FBOf4&_nc_zt=23&_nc_ht=scontent.fnbo12-1.fna&_nc_gid=GYgPeT0zGOnUzv44l8BoBw&oh=00_AfuBVoCPRqNUHBmOXp7cPCmbIYmUkPpfXgj4S4iUvhTw6Q&oe=6983A41B)',
                         backgroundSize: 'cover',
                         backgroundPosition: 'center'
                     }}

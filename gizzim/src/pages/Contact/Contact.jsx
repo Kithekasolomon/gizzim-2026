@@ -146,7 +146,7 @@ const ContactPage = () => {
             <section className="relative pt-32 pb-24 overflow-hidden bg-gradient-to-br from-zinc-900 via-zinc-800 to-zinc-900">
                 <div className="absolute inset-0 opacity-10">
                     <div className="absolute inset-0" style={{
-                        backgroundImage: 'url(https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1920&q=80)',
+                        backgroundImage: 'url(https://scontent.fnbo12-1.fna.fbcdn.net/v/t39.30808-6/570412752_1268539658638320_1095351503324553463_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGaSnPlN7FQ8IdxVMVmor7x08E8mPex3GbTwTyY97HcZjBtVkhuTxSi2qcwWecWkmXsAmnf_cCrrh-Xl1t5a13d&_nc_ohc=LhTbW0sPXU4Q7kNvwG4wYkm&_nc_oc=Adn3qAoJgFJNEd2z3GlKYGZ-4EEuqkvgA5injoV9DLoGQS3r977ZJnGJpndZ_kCOwQ0&_nc_zt=23&_nc_ht=scontent.fnbo12-1.fna&_nc_gid=1QQJ46z5G-9Di9s0O98nJw&oh=00_AfseuYEHH-bZxEKd1MLZdpn4Hjqb6to-w3Owj52ynaYIOQ&oe=6983A12A)',
                         backgroundSize: 'cover',
                         backgroundPosition: 'center'
                     }}></div>

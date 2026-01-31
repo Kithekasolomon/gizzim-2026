@@ -51,7 +51,7 @@ const Homepage = () => {
       icon: <Lightbulb className="w-8 h-8" />,
       title: "Competitive Trials",
       description: "Test your skills in real-world scenarios with photography practicals designed as competitive challenges.",
-      image: "https://images.unsplash.com/photo-1542038784456-1ea8e935640e?w=800&q=80",
+      image: "https://scontent.fnbo12-1.fna.fbcdn.net/v/t39.30808-6/519671731_1180246550800965_5288420683852047548_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGYzw3M1BqIX6d9axeIAdqTX-8NjnhmRmpf7w2OeGZGajB5cOLmiFED3V117iXF8mXjfioiPKT-nCkfmpMQI95V&_nc_ohc=VmFUPxGSlUgQ7kNvwHzRXaX&_nc_oc=AdkkvsiE5h6D-WtXn4ODJnD1rvvbDM9gRQNLP2MFGvX2_mM6czfj3jn4Xis2AiZ5Ry4&_nc_zt=23&_nc_ht=scontent.fnbo12-1.fna&_nc_gid=ZisavhtT-Z_yGm_PRf35Wg&oh=00_AftlhDFOrrwJazqtmHZZAjcDgjNU_9Yo7ygPUhRJ01Oryw&oe=6983C441",
     },
     {
       icon: <ImageIcon className="w-8 h-8" />,

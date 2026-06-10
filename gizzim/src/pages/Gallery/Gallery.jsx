@@ -403,20 +403,20 @@ const GalleryPage = () => {
                 <div className="max-w-7xl mx-auto">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                         <div>
-                            <div className="text-5xl font-serif font-bold text-amber-600 mb-2">24</div>
-                            <div className="text-neutral-400 text-sm uppercase tracking-wide">Gallery Photos</div>
+                            <div className="text-5xl font-serif font-bold text-amber-600 mb-2">5186</div>
+                            <div className="text-neutral-400 text-sm uppercase tracking-wide">Trained Photography Beneficiaries</div>
                         </div>
                         <div>
-                            <div className="text-5xl font-serif font-bold text-amber-600 mb-2">8</div>
-                            <div className="text-neutral-400 text-sm uppercase tracking-wide">Photographers</div>
-                        </div>
-                        <div>
-                            <div className="text-5xl font-serif font-bold text-amber-600 mb-2">10+</div>
-                            <div className="text-neutral-400 text-sm uppercase tracking-wide">Countries</div>
+                            <div className="text-5xl font-serif font-bold text-amber-600 mb-2">2</div>
+                            <div className="text-neutral-400 text-sm uppercase tracking-wide">Training Spaces launched</div>
                         </div>
                         <div>
                             <div className="text-5xl font-serif font-bold text-amber-600 mb-2">5</div>
-                            <div className="text-neutral-400 text-sm uppercase tracking-wide">Categories</div>
+                            <div className="text-neutral-400 text-sm uppercase tracking-wide">Urban slums reached</div>
+                        </div>
+                        <div>
+                            <div className="text-5xl font-serif font-bold text-amber-600 mb-2">10</div>
+                            <div className="text-neutral-400 text-sm uppercase tracking-wide">Photography Instructors</div>
                         </div>
                     </div>
                 </div>

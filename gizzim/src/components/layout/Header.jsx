@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Camera, Menu, X } from 'lucide-react';
+import GizzimLogo from '../../../public/gizzim logo.png';
 
 const navLinks = [
     { name: 'Home', path: '/' },
@@ -24,10 +25,14 @@ const Header = () => {
             <div className="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
                 {/* Logo */}
                 <Link to="/" className="flex items-center space-x-3" onClick={closeMenu}>
-                    <Camera className="w-8 h-8 text-amber-600" />
-                    <h1 className="text-lg font-serif font-bold text-stone-100 tracking-wider">
+                    <img src={GizzimLogo}
+                    width={110}
+                    height={32}
+                        alt="Gizzim Logo" />
+                    {/* <Camera className="w-8 h-8 text-amber-600" /> */}
+                    {/* <h1 className="text-lg font-serif font-bold text-stone-100 tracking-wider">
                         Gizzim Initiative
-                    </h1>
+                    </h1> */}
                 </Link>
 
                 {/* Desktop Nav */}

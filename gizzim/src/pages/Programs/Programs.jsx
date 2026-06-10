@@ -132,11 +132,11 @@ const ProgramsPage = () => {
       format: "In-Person & Virtual",
       description: "Participate in prestigious photography exhibitions, festivals, and industry conferences. Network with peers, showcase your portfolio, and gain exposure in the photography community.",
       highlights: [
-        "Annual international photography festival",
+        // "Annual international photography festival",
         "Quarterly themed exhibitions",
         "Industry conference attendance and speaking opportunities",
-        "Gallery representation for selected artists",
-        "Networking events with curators and buyers",
+        // "Gallery representation for selected artists",
+        // "Networking events with curators and buyers",
         "Online portfolio showcases"
       ],
       image: "https://scontent.fnbo12-1.fna.fbcdn.net/v/t39.30808-6/485294944_1083694233789531_9087067170709571553_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGTDjvAvd7DpL8jNh2xV7yeykqmrMqa347KSqasyprfjpjxP_0pr6lxKedhQSgw4TiuIW4u4DWY0L69MgxQmW0V&_nc_ohc=XjFNrYG95XQQ7kNvwHZfo58&_nc_oc=AdnSKT0zH4NmiwVyCUDaCZiWJFIm8xnJJQvLZU-2gdpl-buBBM_xrFtoSKTuxWs6qzM&_nc_zt=23&_nc_ht=scontent.fnbo12-1.fna&_nc_gid=GFIB7sXoIASONBBYiX4crA&oh=00_AfvuA2zN-eWbY5zg9Te4fPg6aUhkaHFEbc-7-1k7arvUHQ&oe=6983B6C9",
@@ -192,7 +192,7 @@ const ProgramsPage = () => {
           </div>
           <h2 className="text-6xl md:text-7xl font-serif font-black text-stone-100 mb-6 tracking-tight leading-none">
             Transform Your
-            <span className="block text-amber-600 mt-2">Photography Journey</span>
+            <span className="block text-amber-600 mt-2">Creativity Journey</span>
           </h2>
           <p className="text-xl text-stone-300 max-w-3xl mx-auto leading-relaxed">
             Choose from our comprehensive range of training programs, mentorship opportunities, and creative experiences designed to elevate your craft at every level
@@ -289,13 +289,13 @@ const ProgramsPage = () => {
                         <p className="text-sm font-semibold text-zinc-900">{program.nextDate}</p>
                       </div>
                     </div>
-                    <div className="flex items-center space-x-2">
+                    {/* <div className="flex items-center space-x-2">
                       <Star className="w-5 h-5 text-amber-600" />
                       <div>
                         <p className="text-xs text-stone-500 uppercase tracking-wide">Investment</p>
                         <p className="text-sm font-semibold text-zinc-900">{program.price}</p>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
 
                   {/* Highlights */}
@@ -377,7 +377,7 @@ const ProgramsPage = () => {
             <div
               key={logo.alt}
               className="h-16 flex items-center justify-center flex-shrink-0 transition-all duration-300"
-              style={{ filter: 'grayscale(100%)', opacity: 0.55 }}
+              style={{ filter: 'grayscale(5%)', opacity: 0.55 }}
               onMouseEnter={e => { e.currentTarget.style.filter = 'grayscale(0%)'; e.currentTarget.style.opacity = '1'; }}
               onMouseLeave={e => { e.currentTarget.style.filter = 'grayscale(100%)'; e.currentTarget.style.opacity = '0.55'; }}
             >

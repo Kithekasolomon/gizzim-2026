@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Camera, Mail, Phone, MapPin, Clock, Send, X, User, MessageSquare, Calendar, FileText, CheckCircle } from 'lucide-react';
 import Footer from '../../components/layout/Footer';
 import Header from '../../components/layout/Header';
+import mpesa from "../../../public/mpesa logo.png"
 
 const ContactPage = () => {
     const [showModal, setShowModal] = useState(false);
@@ -18,15 +19,6 @@ const ContactPage = () => {
         preferredDate: '',
         experience: ''
     });
-
-    const navLinks = [
-        { name: 'Home', path: '/' },
-        { name: 'Programs', path: '/programs' },
-        { name: 'Gallery', path: '/gallery' },
-        { name: 'Teams', path: '/teams' },
-        { name: 'Mentorship', path: '/mentorship' },
-        { name: 'Contact', path: '/contact' },
-    ];
 
     const openModal = (type) => {
         setModalType(type);
@@ -60,7 +52,6 @@ const ContactPage = () => {
         e.preventDefault();
         console.log('Form submitted:', { type: modalType, data: formData });
         setFormSubmitted(true);
-
         setTimeout(() => {
             closeModal();
         }, 3000);
@@ -70,29 +61,29 @@ const ContactPage = () => {
         {
             icon: <Mail className="w-8 h-8" />,
             title: "Email Us",
-            detail: " info@gizzim.org",
+            detail: "info@gizzim.org",
             description: "Get a response within 24 hours",
-            link: "mailto: info@gizzim.org"
+            link: "mailto:info@gizzim.org"
         },
         {
             icon: <Phone className="w-8 h-8" />,
             title: "Call Us",
             detail: "+254 748 391 403",
-            description: "Mon-Fri, 9AM - 6PM EST",
-            link: "tel:+254 748 391 403"
+            description: "Mon-Fri, 9AM - 6PM EAT",
+            link: "tel:+254748391403"
         },
         {
             icon: <MapPin className="w-8 h-8" />,
             title: "Visit Us",
-            detail: "Githurai 45 ,progressive area near chief's camp",
-            description: "Githurai 45 , Nairobi, Kenya",
+            detail: "Githurai 45, progressive area",
+            description: "Githurai 45, Nairobi, Kenya",
             link: "#"
         },
         {
             icon: <Clock className="w-8 h-8" />,
             title: "Office Hours",
             detail: "Monday - Friday",
-            description: "9:00 AM - 6:00 PM EST",
+            description: "9:00 AM - 6:00 PM EAT",
             link: "#"
         }
     ];
@@ -114,7 +105,7 @@ const ContactPage = () => {
         },
         {
             title: "Request Information",
-            description: "Have questions about our programs, pricing, or schedule? We're here to help.",
+            description: "Have questions about our programs, pricing, or schedule? We are here to help.",
             icon: <MessageSquare className="w-12 h-12" />,
             action: () => openModal('inquiry'),
             bgGradient: "from-blue-600 to-blue-700"
@@ -124,17 +115,33 @@ const ContactPage = () => {
     const offices = [
         {
             city: "Nairobi",
-            address: "progressive, near chiefs office",
+            address: "Progressive area, near chiefs office",
             phone: "+254 748 391 403",
-            email: " info@gizzim.org"
+            email: "info@gizzim.org"
         },
         {
             city: "Lodwar",
             address: "Lodwar town",
             phone: "+254 748 391 403",
-            email: " info@gizzim.org"
-        },
-       
+            email: "info@gizzim.org"
+        }
+    ];
+
+    const mpesaSteps = [
+        'Go to M-Pesa on your phone',
+        'Select Lipa na M-Pesa',
+        'Select Pay Bill',
+        'Enter Business No: 400200',
+        'Enter Account No: 40073600',
+        'Enter amount and confirm'
+    ];
+
+    const paypalSteps = [
+        'Log in to your PayPal account',
+        'Click Send and Request',
+        'Enter gizzim22 at gmail.com',
+        'Enter amount and add note Donation',
+        'Confirm and send'
     ];
 
     return (
@@ -151,10 +158,8 @@ const ContactPage = () => {
                         backgroundPosition: 'center'
                     }}></div>
                 </div>
-
                 <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
                     <div className="inline-block mb-6 px-6 py-2 bg-amber-600/20 border border-amber-600/50 rounded-full">
-                        
                         <span className="text-amber-600 font-semibold text-sm tracking-widest uppercase">Get In Touch</span>
                     </div>
                     <h2 className="text-6xl md:text-7xl font-serif font-black text-stone-100 mb-6 tracking-tight leading-none">
@@ -176,32 +181,25 @@ const ContactPage = () => {
                         </h3>
                         <div className="w-24 h-1 bg-amber-600 mx-auto"></div>
                     </div>
-
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         {quickActions.map((action, index) => (
                             <div
                                 key={index}
                                 className="group relative overflow-hidden bg-white border-2 border-stone-200 hover:border-amber-600 transition-all duration-500 hover:shadow-2xl cursor-pointer"
                                 onClick={action.action}
-                                style={{
-                                    animation: `fadeInUp 0.6s ease-out ${index * 0.1}s both`
-                                }}
+                                style={{ animation: `fadeInUp 0.6s ease-out ${index * 0.1}s both` }}
                             >
                                 <div className={`absolute top-0 left-0 w-full h-2 bg-gradient-to-r ${action.bgGradient}`}></div>
-
                                 <div className="p-8">
                                     <div className={`inline-flex p-4 bg-gradient-to-br ${action.bgGradient} text-white rounded-lg mb-6 group-hover:scale-110 transition-transform duration-300`}>
                                         {action.icon}
                                     </div>
-
                                     <h4 className="text-2xl font-serif font-bold text-zinc-900 mb-3 group-hover:text-amber-600 transition-colors duration-300">
                                         {action.title}
                                     </h4>
-
                                     <p className="text-stone-600 leading-relaxed mb-6">
                                         {action.description}
                                     </p>
-
                                     <div className="flex items-center text-amber-600 font-semibold group-hover:translate-x-2 transition-transform duration-300">
                                         <span>Get Started</span>
                                         <Send className="w-4 h-4 ml-2" />
@@ -225,29 +223,20 @@ const ContactPage = () => {
                             Choose your preferred way to connect with our team
                         </p>
                     </div>
-
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                         {contactMethods.map((method, index) => (
                             <a
                                 key={index}
                                 href={method.link}
                                 className="group bg-white p-8 border border-stone-200 hover:border-amber-600 transition-all duration-300 hover:shadow-xl"
-                                style={{
-                                    animation: `fadeInUp 0.6s ease-out ${index * 0.1}s both`
-                                }}
+                                style={{ animation: `fadeInUp 0.6s ease-out ${index * 0.1}s both` }}
                             >
                                 <div className="text-amber-600 mb-4 group-hover:scale-110 transition-transform duration-300">
                                     {method.icon}
                                 </div>
-                                <h4 className="text-xl font-serif font-bold text-zinc-900 mb-2">
-                                    {method.title}
-                                </h4>
-                                <p className="text-amber-600 font-semibold mb-2">
-                                    {method.detail}
-                                </p>
-                                <p className="text-stone-500 text-sm">
-                                    {method.description}
-                                </p>
+                                <h4 className="text-xl font-serif font-bold text-zinc-900 mb-2">{method.title}</h4>
+                                <p className="text-amber-600 font-semibold mb-2">{method.detail}</p>
+                                <p className="text-stone-500 text-sm">{method.description}</p>
                             </a>
                         ))}
                     </div>
@@ -263,37 +252,28 @@ const ContactPage = () => {
                         </h3>
                         <div className="w-24 h-1 bg-amber-600 mx-auto mb-6"></div>
                         <p className="text-xl text-stone-400 max-w-2xl mx-auto">
-                            Visit us at any of our global offices
+                            Visit us at any of our offices
                         </p>
                     </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                         {offices.map((office, index) => (
                             <div
                                 key={index}
                                 className="bg-zinc-800 p-8 border border-zinc-700 hover:border-amber-600 transition-all duration-300 hover:shadow-2xl hover:shadow-amber-600/10"
-                                style={{
-                                    animation: `fadeInUp 0.6s ease-out ${index * 0.1}s both`
-                                }}
+                                style={{ animation: `fadeInUp 0.6s ease-out ${index * 0.1}s both` }}
                             >
                                 <div className="flex items-center mb-6">
                                     <MapPin className="w-6 h-6 text-amber-600 mr-3" />
-                                    <h4 className="text-2xl font-serif font-bold text-stone-100">
-                                        {office.city}
-                                    </h4>
+                                    <h4 className="text-2xl font-serif font-bold text-stone-100">{office.city}</h4>
                                 </div>
-
                                 <div className="space-y-4">
-                                    <p className="text-stone-300 leading-relaxed">
-                                        {office.address}
-                                    </p>
-
+                                    <p className="text-stone-300 leading-relaxed">{office.address}</p>
                                     <div className="pt-4 border-t border-zinc-700 space-y-2">
-                                        <a href={`tel:${office.phone}`} className="flex items-center text-stone-400 hover:text-amber-600 transition-colors">
+                                        <a href={'tel:' + office.phone} className="flex items-center text-stone-400 hover:text-amber-600 transition-colors">
                                             <Phone className="w-4 h-4 mr-2" />
                                             {office.phone}
                                         </a>
-                                        <a href={`mailto:${office.email}`} className="flex items-center text-stone-400 hover:text-amber-600 transition-colors">
+                                        <a href={'mailto:' + office.email} className="flex items-center text-stone-400 hover:text-amber-600 transition-colors">
                                             <Mail className="w-4 h-4 mr-2" />
                                             {office.email}
                                         </a>
@@ -318,8 +298,112 @@ const ContactPage = () => {
                         <div className="text-center text-white">
                             <MapPin className="w-16 h-16 mx-auto mb-4 text-amber-600" />
                             <h4 className="text-3xl font-serif font-bold mb-2">Find Us</h4>
-                            <p className="text-lg">Main Campus: Nairobi,Kenya</p>
+                            <p className="text-lg">Main Campus: Nairobi, Kenya</p>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Donate Section */}
+            <section className="py-20 px-6 bg-white">
+                <div className="max-w-7xl mx-auto">
+                    <div className="text-center mb-16">
+                        <div className="inline-block mb-4 px-6 py-2 bg-amber-600/10 border border-amber-600/30 rounded-full">
+                            <span className="text-amber-600 font-semibold text-sm tracking-widest uppercase">Support Our Mission</span>
+                        </div>
+                        <h3 className="text-4xl md:text-5xl font-serif font-bold text-zinc-900 mb-4">
+                            Make a Donation
+                        </h3>
+                        <div className="w-24 h-1 bg-amber-600 mx-auto mb-6"></div>
+                        <p className="text-xl text-stone-600 max-w-2xl mx-auto">
+                            Your support helps us empower more photographers across Africa. Every contribution makes a difference.
+                        </p>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+
+                        {/* M-Pesa Card */}
+                        <div className="group bg-stone-50 border-2 border-stone-200 hover:border-green-600 transition-all duration-300 hover:shadow-2xl p-8">
+                            <div className="flex flex-col items-center text-center">
+                                <div className="w-full mb-6 flex items-center justify-center">
+                                    <img
+                                        src="../../../public/mpesa logo.png"
+                                        alt="Lipa na M-Pesa"
+                                        className="h-16 object-contain"
+                                    />
+                                </div>
+                                <div className="w-full space-y-4 mb-6">
+                                    <div className="bg-green-50 border border-green-200 p-4">
+                                        <p className="text-xs font-bold uppercase tracking-widest text-green-700 mb-1">Paybill Number</p>
+                                        <p className="text-3xl font-black text-green-700 tracking-widest">400200</p>
+                                    </div>
+                                    <div className="bg-green-50 border border-green-200 p-4">
+                                        <p className="text-xs font-bold uppercase tracking-widest text-green-700 mb-1">Account Number</p>
+                                        <p className="text-3xl font-black text-green-700 tracking-widest">40073600</p>
+                                    </div>
+                                </div>
+                                <div className="w-full bg-white border border-stone-200 p-4 text-left">
+                                    <p className="text-xs font-bold uppercase tracking-widest text-stone-500 mb-3">How to pay</p>
+                                    <ol className="text-sm text-stone-600 space-y-2 list-none">
+                                        {mpesaSteps.map((step, i) => (
+                                            <li key={i} className="flex items-start gap-2">
+                                                <span className="flex-shrink-0 w-5 h-5 bg-green-600 text-white text-xs font-bold rounded-full flex items-center justify-center mt-0.5">{i + 1}</span>
+                                                <span>{step}</span>
+                                            </li>
+                                        ))}
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* PayPal Card */}
+                        <div className="group bg-stone-50 border-2 border-stone-200 hover:border-blue-500 transition-all duration-300 hover:shadow-2xl p-8">
+                            <div className="flex flex-col items-center text-center">
+                                <div className="w-full mb-6 flex items-center justify-center">
+                                    <img
+                                        src="../../../public/PayPal logo.png"
+                                        alt="PayPal"
+                                        className="h-12 object-contain"
+                                    />
+                                </div>
+                                <div className="w-full mb-6">
+                                    <div className="bg-blue-50 border border-blue-200 p-4 mb-4">
+                                        <p className="text-xs font-bold uppercase tracking-widest text-blue-700 mb-1">PayPal Email</p>
+                                        <p className="text-lg font-bold text-blue-700 break-all">gizzim22@gmail.com</p>
+                                    </div>
+                                    <p className="text-stone-500 text-sm leading-relaxed">
+                                        Send your donation directly via PayPal using the email above, or click the button below to be redirected.
+                                    </p>
+                                </div>
+                                <a
+                                    href="https://www.paypal.com/paypalme/gizzim22"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="w-full block px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold text-center transition-all duration-300 shadow-lg hover:shadow-xl mb-4"
+                                >
+                                    Donate via PayPal
+                                </a>
+                                <div className="w-full bg-white border border-stone-200 p-4 text-left">
+                                    <p className="text-xs font-bold uppercase tracking-widest text-stone-500 mb-3">How to pay</p>
+                                    <ol className="text-sm text-stone-600 space-y-2 list-none">
+                                        {paypalSteps.map((step, i) => (
+                                            <li key={i} className="flex items-start gap-2">
+                                                <span className="flex-shrink-0 w-5 h-5 bg-blue-600 text-white text-xs font-bold rounded-full flex items-center justify-center mt-0.5">{i + 1}</span>
+                                                <span>{step}</span>
+                                            </li>
+                                        ))}
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div className="mt-12 text-center max-w-2xl mx-auto">
+                        <p className="text-stone-500 text-sm leading-relaxed">
+                            All donations go directly toward providing photography equipment, training scholarships, and community programs.
+                            Thank you for your generosity.
+                        </p>
                     </div>
                 </div>
             </section>
@@ -336,7 +420,6 @@ const ContactPage = () => {
                     >
                         {!formSubmitted ? (
                             <>
-                                {/* Modal Header */}
                                 <div className="sticky top-0 bg-gradient-to-r from-amber-600 to-amber-700 text-white p-6 flex justify-between items-center">
                                     <div>
                                         <h3 className="text-2xl font-serif font-bold mb-1">
@@ -347,24 +430,17 @@ const ContactPage = () => {
                                         <p className="text-amber-100 text-sm">
                                             {modalType === 'enrollment' && 'Fill out the form below to enroll in our programs'}
                                             {modalType === 'consultation' && 'Book your free 30-minute consultation'}
-                                            {modalType === 'inquiry' && 'We\'ll get back to you within 24 hours'}
+                                            {modalType === 'inquiry' && 'We will get back to you within 24 hours'}
                                         </p>
                                     </div>
-                                    <button
-                                        onClick={closeModal}
-                                        className="text-white hover:text-amber-200 transition-colors"
-                                    >
+                                    <button onClick={closeModal} className="text-white hover:text-amber-200 transition-colors">
                                         <X className="w-6 h-6" />
                                     </button>
                                 </div>
 
-                                {/* Modal Body */}
                                 <form onSubmit={handleSubmit} className="p-8 space-y-6">
-                                    {/* Name */}
                                     <div>
-                                        <label className="block text-sm font-semibold text-zinc-900 mb-2">
-                                            Full Name *
-                                        </label>
+                                        <label className="block text-sm font-semibold text-zinc-900 mb-2">Full Name *</label>
                                         <div className="relative">
                                             <User className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-stone-400" />
                                             <input
@@ -379,11 +455,8 @@ const ContactPage = () => {
                                         </div>
                                     </div>
 
-                                    {/* Email */}
                                     <div>
-                                        <label className="block text-sm font-semibold text-zinc-900 mb-2">
-                                            Email Address *
-                                        </label>
+                                        <label className="block text-sm font-semibold text-zinc-900 mb-2">Email Address *</label>
                                         <div className="relative">
                                             <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-stone-400" />
                                             <input
@@ -398,11 +471,8 @@ const ContactPage = () => {
                                         </div>
                                     </div>
 
-                                    {/* Phone */}
                                     <div>
-                                        <label className="block text-sm font-semibold text-zinc-900 mb-2">
-                                            Phone Number *
-                                        </label>
+                                        <label className="block text-sm font-semibold text-zinc-900 mb-2">Phone Number *</label>
                                         <div className="relative">
                                             <Phone className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-stone-400" />
                                             <input
@@ -412,18 +482,15 @@ const ContactPage = () => {
                                                 onChange={handleInputChange}
                                                 required
                                                 className="w-full pl-12 pr-4 py-3 border-2 border-stone-200 focus:border-amber-600 focus:outline-none transition-colors"
-                                                placeholder="+1 (555) 123-4567"
+                                                placeholder="+254 700 000 000"
                                             />
                                         </div>
                                     </div>
 
-                                    {/* Conditional Fields */}
                                     {modalType === 'enrollment' && (
                                         <>
                                             <div>
-                                                <label className="block text-sm font-semibold text-zinc-900 mb-2">
-                                                    Select Program *
-                                                </label>
+                                                <label className="block text-sm font-semibold text-zinc-900 mb-2">Select Program *</label>
                                                 <select
                                                     name="program"
                                                     value={formData.program}
@@ -432,19 +499,16 @@ const ContactPage = () => {
                                                     className="w-full px-4 py-3 border-2 border-stone-200 focus:border-amber-600 focus:outline-none transition-colors"
                                                 >
                                                     <option value="">Choose a program...</option>
-                                                    <option value="short-term">Short-Term Training & Camps</option>
+                                                    <option value="short-term">Short-Term Training and Camps</option>
                                                     <option value="intensive">Intensive Training Programs</option>
-                                                    <option value="online">Online Courses & Webinars</option>
+                                                    <option value="online">Online Courses and Webinars</option>
                                                     <option value="mentorship">Mentorship Opportunities</option>
                                                     <option value="competitive">Competitive Trials</option>
-                                                    <option value="exhibitions">Exhibitions & Festivals</option>
+                                                    <option value="exhibitions">Exhibitions and Festivals</option>
                                                 </select>
                                             </div>
-
                                             <div>
-                                                <label className="block text-sm font-semibold text-zinc-900 mb-2">
-                                                    Photography Experience Level
-                                                </label>
+                                                <label className="block text-sm font-semibold text-zinc-900 mb-2">Photography Experience Level</label>
                                                 <select
                                                     name="experience"
                                                     value={formData.experience}
@@ -463,9 +527,7 @@ const ContactPage = () => {
 
                                     {modalType === 'consultation' && (
                                         <div>
-                                            <label className="block text-sm font-semibold text-zinc-900 mb-2">
-                                                Preferred Date & Time
-                                            </label>
+                                            <label className="block text-sm font-semibold text-zinc-900 mb-2">Preferred Date and Time</label>
                                             <div className="relative">
                                                 <Calendar className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-stone-400" />
                                                 <input
@@ -481,9 +543,7 @@ const ContactPage = () => {
 
                                     {modalType === 'inquiry' && (
                                         <div>
-                                            <label className="block text-sm font-semibold text-zinc-900 mb-2">
-                                                Subject
-                                            </label>
+                                            <label className="block text-sm font-semibold text-zinc-900 mb-2">Subject</label>
                                             <input
                                                 type="text"
                                                 name="subject"
@@ -495,7 +555,6 @@ const ContactPage = () => {
                                         </div>
                                     )}
 
-                                    {/* Message */}
                                     <div>
                                         <label className="block text-sm font-semibold text-zinc-900 mb-2">
                                             Message {modalType !== 'inquiry' && '(Optional)'}
@@ -513,7 +572,6 @@ const ContactPage = () => {
                                         </div>
                                     </div>
 
-                                    {/* Submit Button */}
                                     <div className="flex space-x-4 pt-4">
                                         <button
                                             type="submit"
@@ -533,20 +591,15 @@ const ContactPage = () => {
                                 </form>
                             </>
                         ) : (
-                            /* Success Message */
                             <div className="p-12 text-center">
                                 <div className="inline-flex items-center justify-center w-20 h-20 bg-green-100 rounded-full mb-6 animate-bounce">
                                     <CheckCircle className="w-12 h-12 text-green-600" />
                                 </div>
-                                <h3 className="text-3xl font-serif font-bold text-zinc-900 mb-4">
-                                    Thank You!
-                                </h3>
+                                <h3 className="text-3xl font-serif font-bold text-zinc-900 mb-4">Thank You!</h3>
                                 <p className="text-lg text-stone-600 mb-2">
                                     Your {modalType === 'enrollment' ? 'enrollment' : modalType === 'consultation' ? 'consultation request' : 'inquiry'} has been received.
                                 </p>
-                                <p className="text-stone-500">
-                                    We'll get back to you within 24 hours.
-                                </p>
+                                <p className="text-stone-500">We will get back to you within 24 hours.</p>
                             </div>
                         )}
                     </div>
@@ -555,67 +608,26 @@ const ContactPage = () => {
 
             <style jsx>{`
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap');
-        
-        * {
-          font-family: 'Inter', sans-serif;
-        }
-        
-        .font-serif {
-          font-family: 'Playfair Display', serif;
-        }
-
+        * { font-family: 'Inter', sans-serif; }
+        .font-serif { font-family: 'Playfair Display', serif; }
         @keyframes fadeInUp {
-          from {
-            opacity: 0;
-            transform: translateY(40px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
+          from { opacity: 0; transform: translateY(40px); }
+          to { opacity: 1; transform: translateY(0); }
         }
-
         @keyframes fadeIn {
           from { opacity: 0; }
           to { opacity: 1; }
         }
-
         @keyframes scaleIn {
-          from {
-            opacity: 0;
-            transform: scale(0.9);
-          }
-          to {
-            opacity: 1;
-            transform: scale(1);
-          }
+          from { opacity: 0; transform: scale(0.9); }
+          to { opacity: 1; transform: scale(1); }
         }
-
-        .animate-fadeIn {
-          animation: fadeIn 0.3s ease-out;
-        }
-
-        .animate-scaleIn {
-          animation: scaleIn 0.3s ease-out;
-        }
-
-        /* Custom scrollbar for modal */
-        .overflow-y-auto::-webkit-scrollbar {
-          width: 8px;
-        }
-
-        .overflow-y-auto::-webkit-scrollbar-track {
-          background: #f1f1f1;
-        }
-
-        .overflow-y-auto::-webkit-scrollbar-thumb {
-          background: #d97706;
-          border-radius: 4px;
-        }
-
-        .overflow-y-auto::-webkit-scrollbar-thumb:hover {
-          background: #b45309;
-        }
+        .animate-fadeIn { animation: fadeIn 0.3s ease-out; }
+        .animate-scaleIn { animation: scaleIn 0.3s ease-out; }
+        .overflow-y-auto::-webkit-scrollbar { width: 8px; }
+        .overflow-y-auto::-webkit-scrollbar-track { background: #f1f1f1; }
+        .overflow-y-auto::-webkit-scrollbar-thumb { background: #d97706; border-radius: 4px; }
+        .overflow-y-auto::-webkit-scrollbar-thumb:hover { background: #b45309; }
       `}</style>
         </div>
     );

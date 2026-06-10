@@ -60,25 +60,25 @@ const GalleryPage = () => {
         },
 
         // African Cities
-        {
-            id: 4,
-            category: 'cities',
-            src: 'https://images.unsplash.com/photo-1584474028550-627ae3fac95b?w=1200&q=80',
-            title: 'Nairobi Skyline',
-            description: 'Modern Nairobi cityscape at golden hour',
-            photographer: 'David Okonkwo',
-            location: 'Nairobi, Kenya',
-            tall: true
-        },
-        {
-            id: 5,
-            category: 'cities',
-            src: 'https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=1200&q=80',
-            title: 'Cape Town Harbor',
-            description: 'Victoria & Alfred Waterfront with Table Mountain',
-            photographer: 'Alessandro Bianchi',
-            location: 'Cape Town, South Africa'
-        },
+        // {
+        //     id: 4,
+        //     category: 'cities',
+        //     src: 'https://images.unsplash.com/photo-1584474028550-627ae3fac95b?w=1200&q=80',
+        //     title: 'Nairobi Skyline',
+        //     description: 'Modern Nairobi cityscape at golden hour',
+        //     photographer: 'David Okonkwo',
+        //     location: 'Nairobi, Kenya',
+        //     tall: true
+        // },
+        // {
+        //     id: 5,
+        //     category: 'cities',
+        //     src: 'https://images.unsplash.com/photo-1591604129939-f1efa4d9f7fa?w=1200&q=80',
+        //     title: 'Cape Town Harbor',
+        //     description: 'Victoria & Alfred Waterfront with Table Mountain',
+        //     photographer: 'Alessandro Bianchi',
+        //     location: 'Cape Town, South Africa'
+        // },
       
 
         // Wildlife

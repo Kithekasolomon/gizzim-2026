@@ -262,12 +262,12 @@ const TeamsPage = () => {
                                                 </div>
                                             </div>
 
-                                            <p className="text-neutral-300 text-sm leading-relaxed mb-4">
+                                            {/* <p className="text-neutral-300 text-sm leading-relaxed mb-4">
                                                 {member.bio}
-                                            </p>
+                                            </p> */}
 
                                             {/* Education */}
-                                            <div className="mb-4 pb-4 border-b border-neutral-700">
+                                            {/* <div className="mb-4 pb-4 border-b border-neutral-700">
                                                 <div className="flex items-start space-x-2">
                                                     <GraduationCap className="w-4 h-4 text-amber-600 mt-0.5 flex-shrink-0" />
                                                     <div>
@@ -275,22 +275,22 @@ const TeamsPage = () => {
                                                         <p className="text-neutral-300 text-xs">{member.education}</p>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </div> */}
 
                                             {/* Achievements */}
                                             <div className="mb-4">
-                                                <div className="flex items-start space-x-2 mb-2">
+                                                {/* <div className="flex items-start space-x-2 mb-2">
                                                     <Award className="w-4 h-4 text-amber-600 mt-0.5 flex-shrink-0" />
                                                     <p className="text-xs text-neutral-500 uppercase tracking-wide">Key Achievements</p>
-                                                </div>
-                                                <ul className="space-y-1.5">
+                                                </div> */}
+                                                {/* <ul className="space-y-1.5">
                                                     {member.achievements.map((achievement, idx) => (
                                                         <li key={idx} className="text-neutral-300 text-xs flex items-start">
                                                             <span className="text-amber-600 mr-2">•</span>
                                                             <span>{achievement}</span>
                                                         </li>
                                                     ))}
-                                                </ul>
+                                                </ul> */}
                                             </div>
                                         </div>
 

@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom';
 import { Camera, Users, Award, BookOpen, Lightbulb, Image, Clock, Calendar, Star, CheckCircle, ArrowRight } from 'lucide-react';
 import Header from '../../components/layout/Header';
 import Footer from '../../components/layout/Footer'; 
+import Ubuntu from '../../../public/Logo 1.png';
+import ACN from '../../../public/logo 2.png';
+import SHOFCO from '../../../public/logo 3.png';
+import UmandeTrust from '../../../public/logo 4.png';
 
 const ProgramsPage = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -350,10 +354,52 @@ const ProgramsPage = () => {
         </div>
       </section>
 
+      {/* Partners Marquee */}
+<section className="py-6 bg-white border-t border-b border-stone-200 overflow-hidden">
+  <p className="text-center text-xs font-bold tracking-widest uppercase text-stone-400 mb-5">
+    Our Partners & Sponsors
+  </p>
+  <div className="overflow-hidden">
+    <div
+      className="flex w-max"
+      style={{ animation: 'marqueeScroll 18s linear infinite' }}
+      onMouseEnter={e => e.currentTarget.style.animationPlayState = 'paused'}
+      onMouseLeave={e => e.currentTarget.style.animationPlayState = 'running'}
+    >
+      {[...Array(2)].map((_, setIdx) => (
+        <div key={setIdx} className="flex items-center gap-16 px-8">
+          {[
+            { src: '../../../public/Logo 1.png', alt: 'Connection Ubuntu' },
+            { src: '../../../public/logo 2.png',              alt: 'ACN' },
+            { src: '../../../public/logo 3.png',             alt: 'SHOFCO' },
+            { src: '../../../public/logo 4.png',       alt: 'Umande Trust' },
+          ].map(logo => (
+            <div
+              key={logo.alt}
+              className="h-16 flex items-center justify-center flex-shrink-0 transition-all duration-300"
+              style={{ filter: 'grayscale(100%)', opacity: 0.55 }}
+              onMouseEnter={e => { e.currentTarget.style.filter = 'grayscale(0%)'; e.currentTarget.style.opacity = '1'; }}
+              onMouseLeave={e => { e.currentTarget.style.filter = 'grayscale(100%)'; e.currentTarget.style.opacity = '0.55'; }}
+            >
+              <img src={logo.src} alt={logo.alt} className="h-14 w-auto max-w-[160px] object-contain" />
+            </div>
+          ))}
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
       {/* Footer */}
       <Footer />
 
       <style jsx>{`
+
+@keyframes marqueeScroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap');
         
         * {
